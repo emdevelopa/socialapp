@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: nonje;
+.mainappcontainer {
+  width: 80%;
+  box-shadow: 0px 0px 13px 0.8px rgba(0, 0, 0, 0.29);
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 2em;
+ 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label[for=inputpic]{
+  cursor:pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profilecontainer{
+  position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* background-color: aqua; */
+}
+.dots{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border:1px dashed rgba(0, 0, 0, 0.479);
+}
+.dots p{
+  margin-top: 4px;
+  font-weight: bold;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+input[type=file] {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.pic-cont {
+  width: 10em;
+  height: 10em;
+  background: #09090995;
+  border-radius: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pic-cont:hover {
+  background: #000000da;
+}
+.pic-cont img{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.link-section{
+  padding: 1em;
+}
+.link-section a{
+text-decoration:none;
+}
+.link-section a div{
+  font-family: Arial, Helvetica, sans-serif;
+  color:#000;
+  font-weight: bold;
+  font-size:18px;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  border-radius:5px;
+  background: rgb(146, 140, 140);
+  padding: 1em;
+  margin-bottom: 1em;
+}
+.link-section a div:hover{
+  background-color: grey;
+}
+.partnerpics{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+.partnerpics img{
+  margin: 0 8px;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+footer{
+  border-top: 1px solid rgba(0, 0, 0, 0.359);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4em;
+}
+footer div img{
+  width: 7em;
+}
+@media(max-width:740px){
+ footer{
+  flex-direction: column;
+  margin-top: 1em;
+ }
+ footer div img{
+  margin-top: 1em;
+}
 }
