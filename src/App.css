@@ -10,14 +10,14 @@ body {
   margin: 0 auto;
   margin-top: 2em;
   padding: 2em;
- 
+
 }
 
-label[for=inputpic]{
-  cursor:pointer;
+label[for=inputpic] {
+  cursor: pointer;
 }
 
-.profilecontainer{
+.profilecontainer {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -26,22 +26,25 @@ label[for=inputpic]{
   margin: 0 auto;
   /* background-color: aqua; */
 }
-.dots{
+
+.dots {
   position: absolute;
   top: 0;
   right: 0;
   width: 2em;
   height: 2em;
   border-radius: 50%;
-  border:1px dashed rgba(0, 0, 0, 0.479);
+  border: 1px dashed rgba(0, 0, 0, 0.479);
 }
-.dots p{
+
+.dots p {
   margin-top: 4px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 input[type=file] {
   display: none;
 }
@@ -52,66 +55,112 @@ input[type=file] {
   background: #09090995;
   border-radius: 50%;
 }
+
 .pic-cont:hover {
   background: #000000da;
 }
-.pic-cont img{
+
+.pic-cont img {
   width: 10em;
   height: 10em;
   border-radius: 50%;
   object-fit: cover;
 }
-.link-section{
+
+.link-section {
   padding: 1em;
 }
-.link-section a{
-text-decoration:none;
+
+.link-section a {
+  text-decoration: none;
 }
-.link-section a div{
+
+.link-section a div {
   font-family: Arial, Helvetica, sans-serif;
-  color:#000;
+  color: #000;
   font-weight: bold;
-  font-size:18px;
+  font-size: 18px;
   text-align: center;
   margin: 0 auto;
   width: 90%;
-  border-radius:5px;
+  border-radius: 5px;
   background: rgb(146, 140, 140);
   padding: 1em;
   margin-bottom: 1em;
 }
-.link-section a div:hover{
+
+.link-section a div:hover {
   background-color: grey;
 }
-.partnerpics{
+
+.partnerpics {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 2em;
 }
-.partnerpics img{
+
+.partnerpics img {
   margin: 0 8px;
   width: 3em;
   height: 3em;
   border-radius: 50%;
 }
-footer{
+
+footer {
   border-top: 1px solid rgba(0, 0, 0, 0.359);
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 4em;
 }
-footer div img{
+
+footer div img {
   width: 7em;
 }
-@media(max-width:740px){
- footer{
-  flex-direction: column;
-  margin-top: 1em;
- }
- footer div img{
-  margin-top: 1em;
+
+/**---- CONTACT -----**/
+.contact-container{
+  margin-top: 6em;
+  border-radius: 5px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+form h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+form input, form textarea{
+  border-radius: 5px;
+  margin-bottom: 1em;
+  width: 40%;
+  padding: 1em;
+}
+form input[type='submit']{
+  color: white;
+  font-weight: bold;
+  background-color: rgb(73, 255, 1);
+  cursor: pointer;
+}
+form textarea{
+  min-height: 9em;
+  max-height: 9em;
+  min-width: 40%;
+  max-width: 40%;
+}
+
+/**---MEDIA QUERRY ---**/
+@media(max-width:740px) {
+  footer {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+
+  footer div img {
+    margin-top: 1em;
+  }
 }
